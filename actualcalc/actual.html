@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./actual.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="number" class="display" readonly />
+      <div class="keys">
+        <div
+          class="key--operators"
+          data-action="add"
+          onclick="appendToDisplay ('+')"
+        >
+          +
+        </div>
+        <div
+          class="key--operators"
+          data-action="subtract"
+          onclick="appendToDisplay('-')"
+        >
+          -
+        </div>
+        <div
+          class="key--operators"
+          data-action="multiply"
+          onclick="appendToDisplay ('*')"
+        >
+          *
+        </div>
+        <div
+          class="key--operators"
+          data-action="divide"
+          onclick="appendToDisplay ('/')"
+        >
+          /
+        </div>
+        <div>7</div>
+        <div class="number">8</div>
+        <div class="number">9</div>
+        <div class="equal" data-action="calculate">=</div>
+        <div class="number">4</div>
+        <div class="number">5</div>
+        <div class="number">6</div>
+        <div class="number">1</div>
+        <div class="number">2</div>
+        <div class="number">3</div>
+        <div class="number">0</div>
+        <div data-action="decimal" onclick="appendToDisplay ('.')">.</div>
+        <div data-action="clear" class="clear">AC</div>
+      </div>
+    </div>
+    <script src="./actual.js"></script>
+  </body>
+</html>
